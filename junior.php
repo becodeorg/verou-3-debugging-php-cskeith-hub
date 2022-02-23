@@ -57,4 +57,15 @@ foreach($week as &$day) // i added & probley to call $day in the loop ?
 }
 print_r($week);
 
+new_exercise(5);
+// === Exercise 5 ===
+// The result should be: "Copyright © <current year> - BeCode"
+
+function copyright($year) // i removed the INT its a typehint ?
+{
+    print "&copy; $year BeCode";
+}
+//print the copyright
+copyright(date('Y'));
+
 
