@@ -68,4 +68,16 @@ function copyright($year) // i removed the INT its a typehint ?
 //print the copyright
 copyright(date('Y'));
 
+new_exercise(6);
+// === Exercise 6 ===
+// The array should be printing every letter of the alphabet (a-z)
+// Fix the code so the for loop pushes each letter of the alphabet in the array
+
+$arr = [];
+for ($i = 0; $i < 1; $i++) { // Print the arr one time
+    array_push($arr, range('a', 'z')); // giveing the array the alphabet from range A till Z 
+}
+
+print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
+
 
