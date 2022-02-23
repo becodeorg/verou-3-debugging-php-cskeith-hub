@@ -1,6 +1,9 @@
 <?php
 
 declare(strict_types=1);
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
 // Below are several code blocks, read them, understand them and try to find whats wrong.
 // Once this exercise is finished, we'll go over the code all together and we can share how we debugged the following problems.
@@ -15,6 +18,8 @@ echo "Exercise 1 starts here:";
 
 function new_exercise()
 {
-    $block = "<br/><hr/><br/><br/>Exercise $x starts here:<br/>";
+    $x = 1; // Defined $x
+    $block = "<br/><hr/><br/><br/>Exercise $x starts here:<br/>"; // $x was not defined
     echo $block;
 }
+new_exercise(); // I had to call the function
