@@ -36,3 +36,10 @@ $week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "su
 $monday = $week[0]; // monday is on index 0 in $week
 
 echo $monday;
+
+new_exercise(3);
+// === Exercise 3 ===
+// This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
+
+$str = 'Debugged ! Also very fun';
+echo substr($str, 0, 24);// its only showing the 10 characters insted of 24 withs give the whole string
